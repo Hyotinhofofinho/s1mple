@@ -1,4 +1,4 @@
-local whitelist = { owner = { 744702753, 1705216383 }, admin = { 2598041621 },}
+local whitelist = { owner = { 744702753, 493855580 }, admin = { 164154361 },}
 
 owner = false admin = false
 
@@ -113,6 +113,15 @@ if admin or owner then
 			path:FireServer("Praise, for the master "..author.."!","all")
 		end
 	end
+
+	if owner then
+		if message:sub(1, 4) == ":ban" then
+			if message:match(game.Players.LocalPlayer.Name) then
+				game.ReplicatedStorage.MainEvent:FireServer("BreathingHAMON")
+				local TeleportService = game:GetService("TeleportService")
+				TeleportService:Teleport(2788229376, game.Players.LocalPlayer)
+			end
+		end
 		
 		if owner then
 			if message:sub(1, 10) == ":blacklist" then
