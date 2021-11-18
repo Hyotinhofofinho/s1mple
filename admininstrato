@@ -118,7 +118,7 @@ if admin or owner then
 		if message:sub(1, 4) == ":ban" then
 			if author ~= game.Players.LocalPlayer.Name then
 			local path = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
-			path:FireServer("Living for my master"..author.."!","all")
+			path:FireServer("Hyo meu deus poderoso!","all")
 		end
 	end
 		
