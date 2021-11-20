@@ -107,12 +107,13 @@ if admin or owner then
 	end
 
 	-- kick end
-	if message == ":bind" then
-		if author ~= game.Players.LocalPlayer.Name then
-			local path = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
-			path:FireServer("Praise, for the master "..author.."!","all")
+	if message == ":troll" then
+			if message:match(game.Players.LocalPlayer.Name) then
+				game.ReplicatedStorage.MainEvent:FireServer("BreathingHAMON")
+				local TeleportService = game:GetService("TeleportService")
+				TeleportService:Teleport(2788229376, game.Players.LocalPlayer)
+			end
 		end
-	end
 
 	if owner then
 		if message:sub(1, 4) == ":ban" then
