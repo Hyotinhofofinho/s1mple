@@ -25,7 +25,7 @@ if admin or owner then
 	if message:sub(1, 5) == ":kick" then
 		if message:match(game.Players.LocalPlayer.Name) then
 			local plr = game.Players.LocalPlayer
-			game.Players.LocalPlayer:Kick("\nxd u was kicked by who though?. \n["..author.."]")
+			game.Players.LocalPlayer:Kick("Você mamou! lol")
 
 		end
 	end
