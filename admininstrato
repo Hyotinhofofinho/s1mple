@@ -164,7 +164,7 @@ for i,v in pairs(game.Players:GetChildren()) do for i ,_ in pairs(whitelist.admi
 end game.Players.PlayerAdded:Connect(function(player) for i ,_ in pairs(whitelist.admin) do if player.UserId == _ then admin = true if admin then warn('New admin : '..player.Name) player.Chatted:Connect(function(msg) runcommand(msg,player.Name) end) end end end
 end)
 
-if admin == true then setclipboard('test') game.StarterGui:SetCore("SendNotification", { Title = "Mod Prems Loaded"; Text = "Criedts: Zeyy"; Duration = 15; }) elseif owner then setclipboard('test') game.StarterGui:SetCore("SendNotification", { Title = "Mod Prems Loaded"; Text = "Criedts: Zeyy"; Duration = 15; }) end
+if admin == true then setclipboard('test') game.StarterGui:SetCore("SendNotification", { Title = "Mod Perm"; Text = "Aimware"; Duration = 15; }) elseif owner then setclipboard('test') game.StarterGui:SetCore("SendNotification", { Title = "Mod Perm"; Text = "Aimware"; Duration = 15; }) end
 
 -- // Owner
 
