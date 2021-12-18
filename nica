@@ -1,5 +1,5 @@
 -- // Dependencies
-local Aiming = loadstring(game:HttpGet("https://pastebin.com/raw/n9nz7Vj9"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/lalala"))()
 Aiming.TeamCheck(false)
 
 -- // Services
@@ -16,7 +16,7 @@ local CurrentCamera = Workspace.CurrentCamera
 local DaHoodSettings = {
     SilentAim = true,
     AimLock = false,
-    Prediction = 0.135,
+    Prediction = 0.125,
     AimLockKeybind = Enum.KeyCode.E
 }
 getgenv().DaHoodSettings = DaHoodSettings
