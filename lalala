@@ -44,7 +44,7 @@ getgenv().Aiming = {
     Filled = false,
     Transparency = .1,
     
-    HitChance = 100,
+    HitChance = 110,
     Selected = LocalPlayer,
     SelectedPart = nil,
     TargetPart = {"Head", "HumanoidRootPart", "UpperTorso", "LowerTorso", "LeftUpperLeg", "LeftLowerLeg"},
