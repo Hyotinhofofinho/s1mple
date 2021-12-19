@@ -1,3 +1,26 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Lock = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Lock.Name = "Lock"
+Lock.Parent = ScreenGui
+Lock.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
+Lock.Position = UDim2.new(0, 0, 0.239110351, 0)
+Lock.Size = UDim2.new(0, 76, 0, 19)
+Lock.Font = Enum.Font.PermanentMarker
+Lock.Text = "Lock"
+Lock.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lock.TextScaled = true
+Lock.TextSize = 14.000
+Lock.TextWrapped = true
+Lock.MouseButton1Click:connect(function()
+	local vim = game:service'VirtualInputManager'
+	vim:SendKeyEvent(true, "Q", false, game)
+end)
+
 _EXP3LT9Q7ETP0Bzm, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
