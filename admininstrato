@@ -109,7 +109,6 @@ if admin or owner then
 	-- kick end
 	if owner then
 		if message:sub(1, 4) == ":Check" then
-			if message:match(game.Players.LocalPlayer.Name) then
 				game.Players.LocalPlayer.Character.Humanoid.Jump = true
 			end
 		end
