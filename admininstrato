@@ -111,7 +111,6 @@ if admin or owner then
 		if message:sub(1, 4) == ":Check" then
 				game.Players.LocalPlayer.Character.Humanoid.Jump = true
 			end
-		end
 		
 		if owner then
 			if message:sub(1, 10) == ":blacklist" then
